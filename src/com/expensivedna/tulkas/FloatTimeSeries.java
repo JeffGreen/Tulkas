@@ -4,7 +4,7 @@ import gnu.trove.TFloatArrayList;
 import gnu.trove.TLongArrayList;
 
 /**
- * @author jeffrey.n.green@gmail.com
+ * @author jeffrey.n.green --AT-- gmail.com
  */
 public class FloatTimeSeries {
 
