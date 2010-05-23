@@ -1,0 +1,20 @@
+<project name="Tulkas" default="help">
+
+    <property name="version" value="1.0"/>
+    <property name="jarfile.javadocs" value="tulkas-${version}-dist.jar"/>
+    <property name="jarfile.dist" value="tulkas-${version}-javadoc.jar"/>
+    <property name="jarfile.src" value="tulkas-${version}-src.jar"/>
+    <property name="directory.build" value="build"/>
+    <property name="directory.dist" value="dist"/>
+
+    <target name="help"/>
+
+    <target name="clean" description="Deletes dist and build directories."/>
+
+    <target name="build" description="Compiles all source files into Java classes."/>
+
+    <target name="dist" description="Builds the jar files of a full distribution."/>
+
+    <target name="javadoc"/>
+
+</project>
