@@ -57,6 +57,18 @@ public class FloatTimeSeries {
         return true;
     }
 
+    public long getTime(int index) {
+        return times.get(index);
+    }
+
+    public float getValue(int index) {
+        return values.get(index);
+    }
+
+    public int size() {
+        return times.size();
+    }
+
 
     public void addListener(TimeSeriesListener listener) {
         listeners.add(listener);
