@@ -4,6 +4,7 @@ import com.expensivedna.tulkas.FloatTimeSeries;
 import com.expensivedna.tulkas.TimeSeriesListener;
 import org.apache.log4j.Logger;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +22,8 @@ public class Chart implements TimeSeriesListener {
 
     private Legend legend;
 
-    private int width, height;
+    private boolean antiAlias = false;
+    private Color backgroundColor = Color.WHITE;
 
     public Chart() {
         this.domainAxis = new AxisDomain();
@@ -41,28 +43,13 @@ public class Chart implements TimeSeriesListener {
     }
 
 
-    public int getWidth() {
-        return width;
-    }
-
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
-
-
-    public int getHeight() {
-        return height;
-    }
-
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-
     public void pointAdded(long time, float value, FloatTimeSeries series) {
         log.debug("point added");
+    }
+
+
+    public Color getBackgroundColor() {
+        return backgroundColor;
     }
 
 
